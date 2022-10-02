@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Counter from '../islands/Counter.tsx';
+import GlobalCounter from '../islands/GlobalCounter.tsx';
+---
+
+<Layout title="Counter page">
+  <main>
+    <Counter client:load />
+    <Counter client:load />
+    <Counter client:load />
+    <br>
+    <GlobalCounter client:load />
+    <GlobalCounter client:load />
+    <GlobalCounter client:load />
+  </main>
+</Layout>
